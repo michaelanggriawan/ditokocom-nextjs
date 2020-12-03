@@ -1,0 +1,39 @@
+@media screen and (max-width: 639px) {
+	.ditoko__navbar {
+		margin: auto !important;
+	}
+}
+.ditoko__navbar {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	text-align: center;
+	position: fixed;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0px auto;
+	max-width: 464px;
+	background: #fff;
+	box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.1), 0px -2px 1px 0 rgba(0, 0, 0, 0.06);
+}
+.ditoko__navbar p {
+	font-size: 0.8em;
+}
+.ditoko__navbar img {
+	width: auto;
+	height: 25px;
+}
+
+.ditoko__isCountNav {
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	padding-left: 3px;
+	padding-top: 2px;
+	font-weight: 600;
+}

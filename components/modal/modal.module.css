@@ -1,0 +1,34 @@
+.ditoko__modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+	padding: 15px;
+	border-radius: 6px;
+}
+.ditoko__modalBig {
+	background: #ffffff;
+	min-width: 350px;
+}
+.ditoko__modalMedium {
+	background: #ffffff;
+	min-width: 250px;
+}
+.ditoko__modalSmall {
+	background: #ffffff;
+	min-width: 200px;
+}
+.ditoko__modalHeader {
+	font-weight: var(--font-bold);
+	font-size: var(--font-big);
+	margin-bottom: 10px;
+	text-align: center;
+}
+.ditoko__modalContent {
+	padding: 0;
+	text-align: center;
+}
+.ditoko__footer {
+	margin-top: 20px;
+}

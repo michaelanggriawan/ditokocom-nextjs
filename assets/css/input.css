@@ -1,0 +1,151 @@
+.ditoko__inputLabel {
+	display: inline-block;
+	font-size: var(--font-small);
+}
+
+.ditoko__input {
+	font-size: 20px;
+	border: 1px solid #767676;
+	border-radius: 4px;
+	height: 55px;
+	margin: 2px 0 15px 0;
+	line-height: 20px;
+	display: inline-block;
+	font-weight: 400;
+	font-family: 'Airbnb Cereal App Book';
+	padding: 10px;
+	margin-bottom: 5px !important;
+}
+.ditoko__input::placeholder {
+	color: #767676;
+	font-size: 20px;
+	opacity: 1; /* Firefox */
+}
+.ditoko__input:-ms-input-placeholder {
+	color: #767676;
+	font-size: 20px;
+}
+.ditoko__input::-ms-input-placeholder {
+	color: #767676;
+	font-size: 20px;
+}
+
+.ditoko__inputBlock {
+	display: block;
+	width: 100%;
+}
+
+.ditoko__inputError {
+	border: 1px solid var(--color-error) !important;
+}
+
+input:focus {
+	border: 1px solid var(--color-grey);
+	outline: none;
+}
+
+input:disabled {
+	background: #e0e0e0;
+	cursor: no-drop;
+	color: #fff;
+}
+
+/* BnbInput */
+.ditoko__bnbInput {
+	position: relative;
+	width: 100%;
+	height: 55px;
+	overflow: hidden;
+	border-radius: 4px;
+	border: solid 1px #767676;
+}
+
+.ditoko__bnbInput input {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	font-size: 20px;
+	border-radius: 6px;
+	padding: 10px;
+	padding-top: 28px;
+	padding-left: 11px;
+	border: none;
+	color: #000000;
+}
+.ditoko__bnbInput input:focus {
+	padding-top: 28px;
+}
+.ditoko__bnbInput input:active {
+	padding-top: 28px;
+}
+
+.ditoko__bnbInput input::selection {
+	color: #ffffff;
+	background-color: var(--color-primary);
+}
+
+.ditoko__bnbInput input:focus + label span,
+.ditoko__bnbInput input:valid + label span {
+	transform: translateY(-30%);
+	font-size: 15px;
+	font-family: 'Airbnb Cereal App Medium';
+	padding-left: 10px;
+	padding-top: 5px;
+	color: #718096;
+}
+
+.ditoko__bnbInput input:focus + label:after,
+.iditoko__bnbInput input:valid + label:after {
+	transform: translateX(0);
+}
+
+.ditoko__bnbInput label {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+
+	pointer-events: none;
+}
+
+.ditoko__bnbInput label > span {
+	position: absolute;
+	bottom: 5px;
+	color: #718096;
+	padding-left: 15px;
+	top: 10px;
+	left: 0;
+	font-size: 20px;
+	transition: all 0.4s ease;
+}
+
+.ditoko__bnbInput label:after {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.ditoko__bnbInput input:disabled {
+	background-color: #e0e0e0;
+	margin-top: 0px;
+	color: #fff;
+}
+.ditoko__bnbInputDisable {
+	background: #e0e0e0;
+}

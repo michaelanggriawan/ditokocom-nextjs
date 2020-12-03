@@ -1,0 +1,24 @@
+.ditoko__flexCenter {
+	display: flex;
+	justify-content: center;
+}
+.ditoko__flexBetween {
+	display: flex;
+	justify-content: space-between;
+}
+.ditoko__flexItemsContentCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ditoko__flexColumnItemsContentCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.ditoko__flexItemsCenter {
+	display: flex;
+	align-items: center;
+}

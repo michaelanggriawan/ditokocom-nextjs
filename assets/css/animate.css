@@ -1,0 +1,123 @@
+.ditoko__cardAnimate {
+	background: linear-gradient(180deg, #ff6363 0%, #ff8989 100%);
+	border-radius: 4px;
+	z-index: 2;
+	margin-top: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: absolute;
+	right: 0;
+	margin-right: 4px;
+	-webkit-animation: action 1s infinite alternate;
+	animation: action 1s infinite alternate;
+}
+@-webkit-keyframes action {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+@keyframes action {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+.ditoko__cartTitleAnimate p {
+	color: #fff;
+	text-align: center;
+	font-size: var(--font-small);
+}
+.ditoko__cartTitleAnimate h4 {
+	color: #fff;
+	text-align: center;
+	font-size: var(--font-small);
+	position: relative;
+	top: -4px;
+	line-height: 1.3em;
+}
+.ditoko__cartTitleAnimate {
+	width: 100%;
+}
+.ditoko__cartArrow {
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: -20px;
+	right: 10px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	transform: rotate(180deg);
+	border-top: 20px solid #ff6464;
+}
+
+.ditoko__cartCountValue {
+	position: absolute;
+	top: -26px;
+	right: -0px;
+	padding: 5px 10px;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 100px;
+}
+
+.ditoko__animateBottomCard {
+	position: fixed;
+	bottom: 50px;
+	background: #fe4500;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	/* padding: 10px; */
+	padding: 5px 10px;
+	color: #fff;
+	/* height: 35.38px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px auto;
+	max-width: 464px;
+}
+
+@media screen and (max-width: 639px) {
+	.ditoko__animateBottomCard {
+		margin: auto !important;
+	}
+}
+
+.ditoko__animateBottomCard p {
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Airbnb Cereal App Medium';
+	-webkit-animation: shake 1s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	animation: shake 4s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}

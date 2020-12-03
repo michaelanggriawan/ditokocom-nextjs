@@ -1,0 +1,60 @@
+.ditoko__borderBottom {
+	border-bottom: 1px solid #33333361;
+	display: inline-block;
+}
+.ditoko__paragraf {
+	font-size: var(--font-small);
+	line-height: 1;
+}
+.ditoko__bold {
+	font-weight: 700;
+	line-height: 1;
+}
+.ditoko__h1 {
+	font-size: var(--font-big);
+	line-height: 1;
+	color: #222222;
+	font-family: 'Airbnb Cereal App Medium';
+}
+
+.ditoko__h2 {
+	font-size: 22px;
+	line-height: 1;
+	font-family: 'Airbnb Cereal App Book', Arial, -apple-system, Roboto, sans-serif;
+}
+.ditoko__h3 {
+	font-family: 'Airbnb Cereal App Book', Arial, -apple-system, Roboto, sans-serif;
+	font-size: var(--font-medium);
+	line-height: 1;
+}
+.ditoko__h4 {
+	font-size: 17px;
+	font-family: 'Airbnb Cereal App Book', Arial, -apple-system, Roboto, sans-serif;
+	line-height: 1;
+}
+
+.ditoko__h5 {
+	font-size: var(--font-small);
+	font-family: 'Airbnb Cereal App Book', Arial, -apple-system, Roboto, sans-serif;
+	line-height: 1;
+}
+
+.ditoko__h6 {
+	font-size: 14px;
+	font-family: 'Airbnb Cereal App Book', Arial, -apple-system, Roboto, sans-serif;
+	line-height: 1;
+}
+.ditoko__titleClick {
+	cursor: pointer;
+	font-size: var(--font-medium);
+	font-weight: var(--font-reguler);
+}
+
+@media only screen and (max-width: 600px) {
+	.ditoko__paragraf {
+		font-size: 15px;
+	}
+	.ditoko__h4 {
+		font-size: 16px;
+	}
+}
