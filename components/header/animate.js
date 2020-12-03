@@ -17,9 +17,11 @@ export function Animate({ isAnimateCart }) {
 export function AnimateBottom({ isCount, isCart, isAnimateCart }) {
 	return (
 		<Link href='/keranjang'>
-			<div className={`ditoko__animateBottomCard ${!isCart || !isAnimateCart ? 'ditoko__hidden' : 'ditoko__flex'}`}>
-				<p>Ada {isCount !== null ? isCount : ''} Produk di Keranjang, Klik Disini Untuk Bayar</p>
-			</div>
+			<a>
+				<div className={`ditoko__animateBottomCard ${!isCart || !isAnimateCart ? 'ditoko__hidden' : 'ditoko__flex'}`}>
+					<p>Ada {isCount !== null ? isCount : ''} Produk di Keranjang, Klik Disini Untuk Bayar</p>
+				</div>
+			</a>
 		</Link>
 	);
 }

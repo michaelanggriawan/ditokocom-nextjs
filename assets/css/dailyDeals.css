@@ -1,0 +1,55 @@
+.ditoko__cardProductDaily {
+	width: 140px;
+	flex-shrink: 0;
+	height: 100%;
+	margin-left: 10px;
+}
+.ditoko__cardDailyDeals {
+	margin-top: 20px;
+}
+.ditoko__imgProductDaily {
+	border-radius: 4px;
+	width: 100%;
+	height: 110px;
+}
+.ditoko__imgProductDaily img {
+	border-radius: 4px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.ditoko__detailProductDaily {
+	padding-left: 0px;
+}
+.ditoko__dailyDealsTextDiscount {
+	color: #ababab;
+	font-size: 15px;
+}
+.ditoko__priceProductDeals {
+	color: var(--color-primary);
+	border-radius: 4px;
+	display: block;
+	line-height: 1.4;
+}
+.ditoko__promoCount {
+	font-size: 16px;
+	font-family: 'Airbnb Cereal App Book';
+}
+
+.ditoko__nameProductDailyDeals {
+	font-family: 'Airbnb Cereal App Medium';
+	line-height: normal;
+}
+
+.ditoko__proceProductDailyDeals {
+	font-family: 'Airbnb Cereal App Medium';
+	line-height: 1;
+	font-size: 15px;
+}
+
+.ditoko__promoTextCounter {
+	font-size: 24px;
+	font-family: 'Airbnb Cereal App Medium';
+	line-height: 1;
+	font-weight: bold;
+}
