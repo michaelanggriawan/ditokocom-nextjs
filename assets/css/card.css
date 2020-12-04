@@ -83,12 +83,14 @@
 	width: 100%;
 	border-radius: 10px;
 }
+
 .ditoko__cardProductGrid img {
 	width: 100%;
 	border-radius: 10px;
 	height: 154px;
 	object-fit: cover;
 }
+
 .ditoko__imgProductHome {
 	min-height: 130px;
 	height: 100%;

@@ -1,4 +1,3 @@
-import '../assets/css/core.css';
 import '../assets/css/flex.css';
 import '../assets/css/animate.css';
 import '../assets/css/header.css';
@@ -17,6 +16,8 @@ import '../assets/css/dailyDeals.css';
 import '../assets/css/listCategory.css';
 import '../assets/css/slider.css';
 import '../assets/css/lazy.css';
+import '../assets/css/core.css';
+// import '../assets/css/global.css';
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />;
