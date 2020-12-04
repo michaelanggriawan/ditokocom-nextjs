@@ -1,22 +1,33 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect, forwardRef } from 'react';
 import { Overlay } from '../overlay/overlay';
 import { Modal } from '../modal/modal';
 import { FlexCenter } from '../flex/flex';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
 import Link from 'next/link';
 import Img from 'react-cool-img';
 
 export function Sidebar() {
 	const [showModal, setShowModal] = useState(false);
 	const [isSidebar, setSidebar] = useState(false);
-
 	const sidebarElm = useRef(null);
+	const location = useRouter();
 
 	const hideSidebar = useCallback(({ target }) => {
 		if (target.id === 'sidebar') {
 			target.classList.add('ditoko__hidden');
 		}
+	}, []);
+
+	useEffect(() => {
+		const { current } = sidebarElm;
+		if (!current.classList.contains('ditoko__hidden')) {
+			current.classList.add('ditoko__hidden');
+		}
+	}, [location.pathname]);
+
+	useEffect(() => {
+		setSidebar(false);
 	}, []);
 
 	return (

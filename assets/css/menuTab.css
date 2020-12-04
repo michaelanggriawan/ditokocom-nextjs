@@ -1,0 +1,98 @@
+.ditoko__cardTabCategories {
+	display: block;
+	/* max-width: 80px; */
+	margin-top: 5px;
+	text-align: center;
+	position: absolute;
+	overflow-y: auto;
+	height: 90%;
+	padding-bottom: 25px;
+	border-right: 1px solid #ebebeb;
+}
+.ditoko__cardTabMedia {
+	display: block;
+	max-width: 80px;
+	margin-top: 5px;
+	text-align: center;
+	position: absolute;
+	overflow-y: auto;
+	height: 90%;
+	padding-bottom: 25px;
+	border-right: 1px solid #ebebeb;
+}
+.ditoko__tabCategories {
+	cursor: pointer;
+	padding: 15px;
+	color: #767676;
+	width: 100%;
+	background: #ffffff;
+	border-right: 6px solid #ffffff;
+	font-size: 17px;
+}
+.ditoko__tabCategories p {
+	font-size: 17px;
+	color: #767676;
+}
+.ditoko__tabCategories img {
+	height: 50px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+.ditoko__tabMedia {
+	cursor: pointer;
+	padding: 10px;
+	color: #767676;
+	width: 100%;
+	background: #ffffff;
+	border-right: 6px solid #ffffff;
+}
+.ditoko__tabMedia p {
+	font-size: 15px;
+	color: #767676;
+}
+.ditoko__tabMedia img {
+	width: 50px;
+	object-fit: cover;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.ditoko__tabMedia button {
+	text-align: center;
+	font-size: 15px;
+	color: #767676;
+	font-weight: 400;
+	cursor: pointer;
+}
+.ditoko__menuTabName {
+	background: #ffffff;
+	text-align: center;
+}
+.ditoko__tabCategoriesActive {
+	background: #ffffff;
+	border-right: 1px solid #ffffff;
+	color: var(--color-primary) !important;
+	border-right: 6px solid var(--color-primary);
+}
+.ditoko__tabCategories button {
+	text-align: center;
+	font-size: 17px;
+	color: #767676;
+	font-weight: 400;
+	cursor: pointer;
+}
+.ditoko__blockingCategoryTab {
+	width: 80px;
+}
+
+.ditoko__mediaImg {
+	height: auto;
+	/* width: 35px; */
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+.ditoko__mediaImgActive {
+	-webkit-filter: none !important;
+	filter: none !important;
+}

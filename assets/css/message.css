@@ -1,0 +1,23 @@
+.ditoko__alertError {
+	color: var(--color-error);
+}
+
+.ditoko__alertSucces {
+	color: var(--color-success);
+}
+.ditoko__textAlert {
+	font-style: italic;
+	margin-top: 1rem;
+}
+.defaultMsg {
+	font-size: var(--font-medium);
+}
+.bigMsg {
+	font-size: var(--font-big);
+}
+.mediumMsg {
+	font-size: var(--font-medium);
+}
+.smallMsg {
+	font-size: var(--font-small);
+}

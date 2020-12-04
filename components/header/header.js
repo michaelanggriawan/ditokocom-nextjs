@@ -46,7 +46,7 @@ export function Header() {
 				<FlexBetween css='ditoko__headerApp'>
 					{handleBackButton ? (
 						<span className='ditoko__pointer' onClick={() => window.history.back()}>
-							<Img cache loading='lazy' src={imgArrowBack} alt='back button' />
+							<Img cache loading='lazy' src='/images/arrowBack.png' alt='back button' />
 						</span>
 					) : (
 						<span className='ditoko__pointer' ref={barsElm} onClick={toggleSidebar}>

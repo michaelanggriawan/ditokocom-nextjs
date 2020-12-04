@@ -1,0 +1,54 @@
+.ditoko__select {
+	display: block;
+	width: 100%;
+	color: #000000;
+	height: 55px;
+	padding: 10px 10px;
+	border: solid 1px #767676;
+	cursor: pointer;
+	font-size: var(--font-medium);
+	margin-top: 10px;
+	background: var(--color-secondary);
+	border-radius: 4px;
+	text-align: left;
+	background: url('/images/selectArrow.png') no-repeat 95% 50%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.ditoko__selectError {
+	border-color: var(--color-error) !important;
+}
+.ditoko__select::placeholder {
+	color: #718096;
+}
+.ditoko__dataSelect {
+	position: absolute;
+	background: #ffffff;
+	left: 0;
+	right: 0;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 1px;
+	max-height: 250px;
+	overflow: auto;
+	z-index: 22;
+}
+.ditoko__ulSelect {
+	padding: 0;
+}
+.ditoko__ulSelect li {
+	padding: 15px 10px;
+	font-size: var(--font-medium);
+	font-weight: var(--font-bold);
+	cursor: pointer;
+	background: #ffffff;
+}
+.ditoko__ulSelect li:hover {
+	background: #e0e0e0;
+}
+
+select:disabled {
+	background: #e0e0e0;
+	cursor: no-drop;
+	color: #fff;
+}
