@@ -13,7 +13,6 @@ import Axios from 'axios';
 export default function Login() {
 	// const { user, dispatch } = useContext(UserContext);
 	// const { progress, handleProgress } = useProgress();
-
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [password, setPassword] = useState('');
 	const [isLoadBtn, setLoadBtn] = useState(false);
@@ -70,6 +69,7 @@ export default function Login() {
 			</Button>
 		);
 	}
+
 	return (
 		<Navigation>
 			<MetaLogin />

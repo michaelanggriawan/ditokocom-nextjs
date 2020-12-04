@@ -14,6 +14,14 @@ import '../assets/css/textarea.css';
 import '../assets/css/message.css';
 import '../assets/css/menuTab.css';
 import '../assets/css/listItems.css';
+import '../assets/css/card.css';
+import '../assets/css/activeHome.css';
+import '../assets/css/brandCategory.css';
+import '../assets/css/brandHome.css';
+import '../assets/css/dailyDeals.css';
+import '../assets/css/listCategory.css';
+import '../assets/css/slider.css';
+import '../assets/css/lazy.css';
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />;

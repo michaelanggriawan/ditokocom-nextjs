@@ -1,0 +1,93 @@
+.ditoko__cardSliderActive {
+	border-radius: 10px;
+	margin-left: 10px;
+	width: 185px;
+	flex-shrink: 0;
+	height: 100%;
+}
+.ditoko__cardActiveHome {
+	margin-bottom: 0px;
+	width: 100%;
+	padding-left: 5px;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+/* .ditoko__positionTextIcon {
+	display: flex;
+	position: relative;
+	top: 40px;
+} */
+
+.ditoko__sliderTextAllActive {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	display: flex;
+	padding-left: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.ditoko__sliderTextAllActive p {
+	font-size: 22px;
+	color: var(--color-primary);
+	font-weight: 600;
+}
+.ditoko__activeHomeTextAll {
+	display: flex;
+	width: 185px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 150px;
+}
+/* @media only screen and (max-width: 479px) {
+	.ditoko__activeHomeTextAll {
+		height: 8.7em !important;
+	}
+} */
+.ditoko__ActiveArrowAll {
+	padding: 0;
+	display: flex;
+}
+
+.ditoko__imgActiveHome {
+	height: 154px;
+	border-radius: 10px;
+	width: 185px;
+	object-fit: cover;
+}
+.ditoko__imgActiveHome img {
+	border-radius: 10px;
+}
+.ditoko__activeHomesAll {
+	height: auto;
+	display: flow-root !important;
+	position: relative;
+	margin-left: 20px;
+	width: 94% !important;
+	border-radius: 10px;
+	border: 2px solid var(--color-primary);
+}
+.ditoko__ActiveHomeProductName {
+	font-size: 24px;
+	font-family: 'Airbnb Cereal App Medium';
+	font-weight: normal;
+	line-height: 1;
+	margin-top: 5px;
+}
+
+.ditoko__ActiveHomeProductPrice {
+	font-size: 24px;
+	font-family: 'Airbnb Cereal App Medium';
+	line-height: 1;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.ditoko__descActiveHomeEllipsis {
+	width: 95%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

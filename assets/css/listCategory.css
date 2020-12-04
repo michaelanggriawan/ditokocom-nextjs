@@ -1,0 +1,42 @@
+.ditoko__listCategoryCard {
+	height: max-content;
+	position: relative;
+	top: -15px;
+}
+.ditoko__cardIconCategory {
+	width: 20%;
+	padding: 0.5rem;
+}
+.ditoko__categoryMenu {
+	position: absolute;
+	z-index: 1;
+	right: -10px;
+	background: #fff;
+	padding: 10px;
+	top: -40px;
+	box-shadow: -6px -1px 7px -1px rgb(0 0 0 / 5%);
+	/* border-left: 1px solid #33333365; */
+}
+
+.ditoko__cardIconCategory img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.ditoko__cardTitleCategory {
+	text-align: center;
+	font-size: var(--font-small);
+	color: var(--color-primary);
+}
+
+@media (min-width: 640px) {
+	.ditoko__cardIconCategory {
+		padding: 1rem;
+	}
+}
+
+@media (min-width: 640px) {
+	.ditoko__cardTitleCategory {
+		font-weight: 500;
+	}
+}

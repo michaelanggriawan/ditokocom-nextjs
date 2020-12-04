@@ -1,0 +1,38 @@
+.ditoko__cardBrandCategory {
+	margin-bottom: 10px;
+}
+
+.ditoko__cardBrandCategorySlider {
+	/* display: flex; */
+	margin-right: 5px;
+	margin-top: 10px;
+	width: max-content;
+	border-radius: 10px;
+	align-items: center;
+	/* box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.1), 1px 7px 9px 0px rgba(0, 0, 0, 0.06); */
+	border: 2px solid #ebebeb;
+}
+.ditoko__cardBrandCategorySlider p {
+	/* white-space: normal;
+	width: 70px; */
+	/* padding-left: 15px; */
+	font-size: 17px;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 55px;
+	font-family: 'Airbnb Cereal App Bold';
+	font-weight: 600;
+}
+
+.ditoko__sliderBrandCategory {
+	width: 100%;
+	padding-left: 15px;
+	display: flex;
+	padding-bottom: 10px;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}

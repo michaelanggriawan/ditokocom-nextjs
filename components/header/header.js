@@ -54,13 +54,9 @@ export function Header() {
 						</span>
 					)}
 					<Link href='/'>
-						<Img
-							cache
-							loading='lazy'
-							className={`${!urlData ? 'ditoko__logoBrandHeader' : 'ditoko__logoBrandHeaderActive'}`}
-							src='/images/full_logo.png'
-							alt='ditoko - Home'
-						/>
+						<a>
+							<Img cache loading='lazy' className={`${!urlData ? 'ditoko__logoBrandHeader' : 'ditoko__logoBrandHeaderActive'}`} src='/images/full_logo.png' alt='ditoko - Home' />
+						</a>
 					</Link>
 
 					<div className={`ditoko__relative `}>
@@ -87,10 +83,7 @@ export function Header() {
 					</div>
 				</FlexBetween>
 			</header>
-			<div
-				onClick={() => setChangeLocation(false)}
-				className={`ditoko__dropDownOverlayLocationHeader  ${isChangeLocation ? 'ditoko__block' : 'ditoko__hidden'}`}
-			/>
+			<div onClick={() => setChangeLocation(false)} className={`ditoko__dropDownOverlayLocationHeader  ${isChangeLocation ? 'ditoko__block' : 'ditoko__hidden'}`} />
 
 			<AnimateBottom isAnimateCart={isAnimateCart} isCount={isCount} isCart={isCart} />
 		</>

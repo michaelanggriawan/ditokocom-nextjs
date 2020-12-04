@@ -1,11 +1,7 @@
-import { Navigation } from '../components/navigation/navigation';
-import { MetaHome } from '../meta/metaHome';
+// import { Navigation } from '../components/navigation/navigation';
+// import { MetaHome } from '../meta/metaHome';
+import SubCategory from './[subCategory]';
 
 export default function Home() {
-	return (
-		<Navigation>
-			<MetaHome />
-			<h1>Home</h1>
-		</Navigation>
-	);
+	return <SubCategory />;
 }

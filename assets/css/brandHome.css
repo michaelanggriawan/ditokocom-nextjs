@@ -1,0 +1,49 @@
+.ditoko__brandHome {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+.ditoko__imgBrandHome {
+	margin: 0px;
+}
+.ditoko__imgBrandHome p {
+	text-align: center;
+	color: var(--color-primary);
+}
+.ditoko__imgBrandHomeLoad {
+	margin: 5px;
+	padding: 10px;
+	background: #ffffff;
+}
+.ditoko__imgBrandHome img {
+	border-radius: 4px;
+	width: 70px;
+	height: 70px;
+}
+.ditoko__cardBrandHome {
+	display: flex;
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 200px;
+	border-radius: 6px;
+	align-items: center;
+	/* box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.1), 1px 7px 9px 0px rgba(0, 0, 0, 0.06); */
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.ditoko__cardBrandHome p {
+	white-space: normal;
+	width: 70px;
+	font-size: 17px;
+	padding-left: 15px;
+}
+.ditoko__sliderBrandHome {
+	width: 100%;
+	display: flex;
+	padding-bottom: 0px;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,152 @@
+.ditoko__cardProduct {
+	margin-bottom: 30px;
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 6px;
+	flex-shrink: 0;
+	height: 100%;
+}
+.ditoko__cardProductGrid {
+	margin-bottom: 30px;
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 6px;
+	flex-shrink: 0;
+	height: 100%;
+}
+.ditoko__btnVideoAction {
+	height: 55px;
+	text-align: center;
+	display: flex;
+	padding: 12px;
+	background: var(--color-primary);
+	align-items: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	justify-content: center;
+	border-radius: 0px 0px 10px 10px;
+	animation-name: like-heart-animation;
+	animation-timing-function: 1s ease-in-out;
+}
+
+@keyframes like-heart-animation {
+	0% {
+		opacity: 0;
+	}
+	15% {
+		opacity: 0.3;
+	}
+	30% {
+		opacity: 0.6;
+	}
+	45%,
+	80% {
+		opacity: 1;
+	}
+}
+
+.ditoko__videoCardAction {
+	position: absolute;
+	top: -60px;
+	right: 0;
+	left: 0;
+}
+
+.ditoko__reactPlayerCardAuto {
+	border-radius: 10px;
+}
+.ditoko__reactPlayerCardAuto video {
+	border-radius: 10px;
+	height: 350px !important;
+	object-fit: cover;
+}
+
+.ditoko__reactPlayerCard {
+	border-radius: 10px;
+}
+.ditoko__reactPlayerCard video {
+	border-radius: 10px;
+	height: 400px !important;
+	object-fit: cover;
+}
+@media screen and (max-width: 639px) {
+	.ditoko__reactPlayerCard video {
+		height: 340px !important;
+	}
+	.ditoko__reactPlayerCardAuto video {
+		height: 250px !important;
+	}
+}
+
+.ditoko__cardProduct img {
+	width: 100%;
+	border-radius: 10px;
+}
+.ditoko__cardProductGrid img {
+	width: 100%;
+	border-radius: 10px;
+	height: 154px;
+	object-fit: cover;
+}
+.ditoko__imgProductHome {
+	min-height: 130px;
+	height: 100%;
+}
+
+.ditoko__productPrice {
+	margin-top: 15px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+.ditoko__productPrice p {
+	color: #ababab;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ditoko__heightImgCardAuto {
+	height: auto;
+}
+.ditoko__heightImgCard {
+	height: 6rem;
+}
+@media (min-width: 1024px) {
+	.ditoko__heightImgCard {
+		height: 10rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.ditoko__heightImgCard {
+		height: 6rem;
+	}
+	.ditoko__cardProductPages {
+		height: 16rem;
+	}
+}
+
+.ditoko__widthCardProduct {
+	flex: 0 0 auto;
+}
+@media (min-width: 768px) {
+	.ditoko__widthCardProduct {
+		width: 33.333333%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ditoko__widthCardProduct {
+		width: 50%;
+	}
+}
+
+.ditoko__productName {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Airbnb Cereal App Medium';
+}
+.ditoko__productPriceBig {
+	font-size: 24px;
+	font-family: 'Airbnb Cereal App Medium';
+}
