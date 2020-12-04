@@ -1,0 +1,158 @@
+/* Banner */
+.ditoko__bannerHome {
+	width: 100%;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.ditoko__cardBannerHomeLoad {
+	margin-bottom: 0px;
+}
+.ditoko__cardBannerHomeLoad img {
+	border-radius: 10px;
+	width: 300px;
+	flex-shrink: 0;
+	margin-left: 15px;
+	height: 250px;
+	object-fit: cover;
+	margin: 10px;
+}
+.ditoko__cardBannerHome {
+	margin-bottom: 0px;
+}
+
+.ditoko__cardBannerHome img {
+	border-radius: 10px;
+	width: 300px;
+	flex-shrink: 0;
+	margin-left: 15px;
+	height: 250px;
+	object-fit: cover;
+}
+
+/* Daily */
+.ditoko__dailyDealsSlider {
+	width: 100%;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	padding-left: 10px;
+	-webkit-overflow-scrolling: touch;
+}
+.ditoko__subBrandSlider {
+	width: 100%;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	margin-left: -4px;
+	margin-right: -4px;
+	-webkit-overflow-scrolling: touch;
+}
+.ditoko__sliderProductDaily {
+	margin-bottom: 0px;
+	margin-left: -6px;
+	display: block;
+}
+.ditoko__sliderProductDailyActive {
+	height: 200px;
+	padding: 20px;
+}
+.ditoko__dailyDealsAll {
+	height: 110px;
+	display: flow-root !important;
+	position: relative;
+	margin-left: 20px;
+	width: 94% !important;
+	border-radius: 4px;
+	border: 2px solid var(--color-primary);
+}
+.ditoko__textDailyDealStyle {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.ditoko__textDailyDealStyle p {
+	font-size: 18px;
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+.ditoko__dailyDealsTextAll {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 100%;
+	width: 120px;
+}
+
+.ditoko__dailyArrowAll {
+	padding: 0;
+	display: flex;
+}
+.ditoko__dailyArrowAll img {
+	width: 20px;
+	height: auto;
+}
+
+/* category */
+.ditoko__cardCategorySliderLoad {
+	height: 25px;
+	width: 100%;
+	background: #d4d4d452;
+	border-radius: 6px;
+	margin-bottom: 5px;
+}
+.ditoko__categorySliderHome {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-right: 25px;
+}
+.ditoko__categorySliderHome::-webkit-scrollbar {
+	display: none;
+}
+
+/* Slider */
+.ditoko__normalSlide {
+	overflow: hidden;
+}
+
+/* Promo */
+.ditoko__normalSlide {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Brandpages */
+.ditoko__cardSliderBrandCategory {
+	margin: 5px;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	border-radius: 6px;
+	height: auto;
+}
+.ditoko__deskSliderBrandPage {
+	padding: 5px 10px;
+	color: var(--color-primary);
+}
+.ditoko__deskSliderBrandPage p {
+	text-align: center;
+}
+.ditoko__imgSliderBrandCategory {
+	min-height: 85px;
+}
+.ditoko__imgSliderBrandCategory img {
+	border-radius: 6px 6px 0px 0px;
+}
