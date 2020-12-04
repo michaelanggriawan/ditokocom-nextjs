@@ -1,0 +1,49 @@
+.ditoko__cardOngkir {
+	padding: 15px 0px;
+}
+.ditoko__selectOngkir {
+	font-size: var(--font-medium);
+	text-align: center;
+	border: 1px solid #767676;
+	min-width: 150px;
+	padding: 6px 14px;
+	height: 55px;
+	cursor: pointer;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ditoko__resultOngkirPrice {
+	font-size: 17px;
+	text-align: right;
+	padding-right: 15px;
+	color: #4a4a4a;
+}
+
+.ditoko__previewOngkirInProductPage {
+	font-size: 20px;
+}
+
+.ditoko__previewOngkirInProductPage small {
+	font-size: 15px;
+	font-family: 'Airbnb Cereal App Medium';
+	display: block;
+	line-height: 1;
+	position: relative;
+	top: -1px;
+	color: #767676;
+	text-align: left;
+}
+
+.ditoko__previewOngkirInProductPage h6 {
+	line-height: 1;
+	position: relative;
+	top: 1px;
+	color: #4a4a4a;
+	text-align: left;
+}
+
+.ditoko__priceOngkirInProductPage {
+	padding-left: 15px;
+}

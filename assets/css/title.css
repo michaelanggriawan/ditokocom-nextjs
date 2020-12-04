@@ -1,0 +1,29 @@
+.ditoko__titleProduct {
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 13px;
+}
+.ditoko__titleProductSmall {
+	font-size: var(--font-big);
+}
+.ditoko__priceProduct {
+	font-size: var(--font-big);
+	font-weight: bold;
+}
+.ditoko__dailyDeal {
+	font-size: var(--font-medium);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ditoko__dailyDealPrice {
+	color: var(--color-grey);
+	margin-left: 10px;
+	font-size: var(--font-small);
+	text-decoration: line-through;
+}
+
+.ditoko__descAndPriceProductPage {
+	line-height: 1;
+}

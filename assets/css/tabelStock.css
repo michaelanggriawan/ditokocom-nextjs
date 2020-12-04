@@ -1,0 +1,110 @@
+.ditoko__contentStockProduct {
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.ditoko__btnStockProduct {
+	width: 100%;
+	white-space: nowrap;
+	margin-right: 10px;
+	cursor: pointer;
+	padding: 8px 12px;
+	background: #ffffff;
+	border-radius: 15px;
+	color: #ebebeb;
+	font-weight: var(--font-bold);
+	font-size: var(--font-medium);
+	border: 2px solid #ebebeb;
+}
+.ditoko__btnStockProductActive {
+	background: #ffffff;
+	color: #222222;
+	border: 2px solid #222222;
+}
+.ditoko__sliderCityStockProduct {
+	width: 100%;
+	display: flex;
+	scroll-snap-type: x mandatory;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom: 15px;
+}
+
+.ditoko__dataStockProduct {
+	padding: 0px;
+	border-radius: 0px 0px 10px 10px;
+}
+.ditoko__sliderStockProduct {
+	overflow: hidden;
+	border-radius: 0px 0px 10px 10px;
+}
+.ditoko__detailDataStockProduct {
+	padding: 0;
+}
+.ditoko__slidesStockProduct {
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	font-size: var(--font-medium);
+	width: 100%;
+	display: inline-grid;
+}
+.ditoko__tabelContentStock {
+	padding: 0px;
+	color: #4a4a4a;
+	font-weight: 400;
+	font-size: var(--font-medium);
+	display: flex;
+	align-items: center;
+}
+.ditoko__sizeStockProduct {
+	padding-right: 10px;
+	padding-left: 0px;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Airbnb Cereal App Medium';
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-width: max-content;
+}
+.ditoko__colorAndQty {
+	padding: 0;
+}
+.ditoko__colorStockProduct {
+	padding-top: 5px;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.ditoko__qtyStockProduct {
+	font-weight: var(--font-bold);
+	padding-left: 10px;
+	white-space: nowrap;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/* min-width: 100px; */
+}
+.ditoko__cardStockProduct {
+	padding: 0;
+}
+.ditoko__titleStockProduct {
+	margin-bottom: 10px;
+}
+.ditoko__titleStockProduct p {
+	font-size: var(--font-big);
+	font-family: 'Airbnb Cereal App Medium';
+	font-weight: var(--font-bold);
+	color: #222222;
+}
+
+.ditoko__lineOfStock {
+	/* background: #ebebeb; */
+	background: #ffffff;
+	display: table-row;
+	border-bottom: 1px solid #c5c5c5;
+}
+.ditoko__lineOfStockGrey {
+	width: 100%;
+	background: #ffffff;
+	border-bottom: 1px solid #c5c5c5;
+}

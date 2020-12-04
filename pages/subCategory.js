@@ -52,7 +52,6 @@ export default function Home() {
 		handleProgress.start();
 		Axios.get(endpoint)
 			.then((res) => {
-				console.log(res)
 				const { result } = res.data;
 				setProducts((prev) => ({
 					brandName: result.data[0].product && result.data[0].brand.brand_name,
@@ -148,7 +147,6 @@ export default function Home() {
 				if (err) {
 					if (err.response) {
 						if (err.response.status === 429) {
-							console.log(err.response.status);
 							alert('Jangan terlalu cepat pindah halaman');
 						}
 					}
@@ -192,7 +190,6 @@ export default function Home() {
 
 					if (err.response) {
 						if (err.response.status === 429) {
-							console.log(err.response.status);
 							alert('Jangan terlalu cepat pindah halaman');
 						}
 					}
@@ -297,7 +294,6 @@ function DataCard({ data, subCategory }) {
 		} else {
 			dailyDealPrice = product.daily_deal.price;
 		}
-
 		return (
 			<Suspense key={product.id.toString()} fallback={<LazyContentHome />}>
 				<CardProduct
@@ -307,7 +303,7 @@ function DataCard({ data, subCategory }) {
 					key={product.id.toString()}
 					name={product.name}
 					price={addCommas(product.price)}
-					link={`${subCategory || product.slug.replace(/[0-9]/g, '')}/${product.slug}`}
+					link={`produk/${subCategory || product.slug.replace(/[0-9]/g, '')}/${product.slug}`}
 					imageUrl={'https://ditoko.oss-ap-southeast-5.aliyuncs.com/' + product.images[0].image_url}
 				/>
 			</Suspense>

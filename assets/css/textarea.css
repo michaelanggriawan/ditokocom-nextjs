@@ -1,0 +1,17 @@
+.ditoko__textArea {
+	display: block;
+	width: 100%;
+	border-radius: 4px;
+	resize: none;
+	font-size: 17px;
+	border: 1px solid #767676;
+	padding: 10px;
+	margin-top: 10px;
+	color: #000000;
+}
+.ditoko__textArea::placeholder {
+	color: #718096;
+}
+.ditoko__textAreaError {
+	border-color: var(--color-error);
+}

@@ -204,6 +204,22 @@ body {
 	background-color: #f7f7f7;
 	background: #f7f7f7;
 }
+/* Skeleton */
+.skeleton {
+	background-image: linear-gradient(to right, #e6e6e6, #ffffff, #e6e6e6);
+	display: inline-block;
+	background-size: 200%;
+	animation: preloader-block 2s linear 0s infinite reverse forwards;
+}
+
+@keyframes preloader-block {
+	from {
+		background-position: 0%, 0;
+	}
+	to {
+		background-position: 170%, 0;
+	}
+}
 
 /* Container */
 .ditoko__container {
@@ -693,10 +709,10 @@ body {
 
 /* Display */
 .ditoko__hidden {
-	display: none;
+	display: none !important;
 }
 .ditoko__block {
-	display: block;
+	display: block !important;
 }
 .ditoko__vsBlock {
 	visibility: visible;

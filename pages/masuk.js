@@ -1,20 +1,22 @@
 import { useCallback, useState } from 'react';
 import Slider from 'react-slick';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 import { Navigation } from '../components/navigation/navigation';
 import { H1, P } from '../components/typography/typography';
 import { MetaLogin } from '../meta/metaLogin';
 import { BnbInput } from '../components/input/input';
 import { Button } from '../components/button/button';
 import { FlexCenter } from '../components/flex/flex';
+import Axios from 'axios';
 
 export default function Login() {
 	// const { user, dispatch } = useContext(UserContext);
 	// const { progress, handleProgress } = useProgress();
-	const history = useRouter();
 	const [phoneNumber, setPhoneNumber] = useState('');
 	const [password, setPassword] = useState('');
+	const [isLoadBtn, setLoadBtn] = useState(false);
+	const [isError, setError] = useState(false);
 
 	const handleSubmit = useCallback(
 		(e) => {
@@ -23,18 +25,23 @@ export default function Login() {
 				username: phoneNumber,
 				password,
 			};
-			handleProgress.start();
+
+			setLoadBtn(true);
+
 			Axios.post(process.env.REACT_APP_API_ENDPOINT + 'login', data)
 				.then((res) => {
 					// console.log(res, 'login');
 					localStorage.setItem('refreshToken', res.data.result.refresh_token);
-					handleProgress.end();
+					setLoadBtn(false);
 					dispatch.user(res.data.result.access_token);
 				})
-				.catch(() => handleProgress.error());
+				.catch(() => {
+					setError(true);
+					setLoadBtn(false);
+				});
 		},
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[phoneNumber, password, history.location]
+		[phoneNumber, password]
 	);
 
 	const sliderLogin = {
@@ -51,19 +58,18 @@ export default function Login() {
 	let button;
 	if (phoneNumber.length > 0 && password.length > 0) {
 		button = (
-			<Button block disabled css='ditoko__mt30 ditoko__fontBig ditoko__bold' size='medium'>
-				{/* {progress.isLoading ? 'Loading' : 'Masuk'} */}
-				login
+			<Button block disabled={isLoadBtn} css='ditoko__mt30 ditoko__fontBig ditoko__bold' size='medium'>
+				{isLoadBtn ? 'Loading' : 'Masuk'}
 			</Button>
 		);
 	} else {
 		button = (
 			<Button disabled block css='ditoko__mt30 ditoko__fontBig ditoko__bold' size='medium'>
-				{/* {progress.isLoading ? 'Loading' : 'Masuk'} */}
-				login
+				{isLoadBtn ? 'Loading' : 'Masuk'}
 			</Button>
 		);
 	}
+
 	return (
 		<Navigation>
 			<MetaLogin />
@@ -95,7 +101,7 @@ export default function Login() {
 						<BnbInput value={password} onChange={(e) => setPassword(e.target.value)} label='Password' name='password' type='password' />
 					</div>
 
-					{/* <Message size='small'>Nomor handphone atau kata sandi salah.</Message> */}
+					{isError && <Message size='small'>Nomor handphone atau kata sandi salah.</Message>}
 					{button}
 				</form>
 

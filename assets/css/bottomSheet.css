@@ -1,0 +1,66 @@
+.ditoko__cardColorBS {
+	padding: 10px 0px;
+	background: var(--color-secondary);
+}
+.ditoko__selectColor {
+	padding: 6px 18px;
+	background: rgb(212, 212, 212);
+	margin-right: 8px;
+}
+.ditoko__selectColorActive {
+	background: var(--color-primary);
+	color: var(--color-secondary);
+}
+.ditoko__cardBS {
+	/* position: fixed; */
+	position: relative;
+	/* bottom: 0;
+	right: 0;
+	left: 0; */
+	/* z-index: 12; */
+}
+
+.ditoko__modalActiveBottomSheet {
+	position: absolute !important;
+	left: 50% !important;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+}
+.ditoko__footerBS {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.ditoko__contentBS {
+	padding: 0;
+	background: var(--color-secondary);
+}
+.ditoko__cardBottomFix {
+	/* padding: 0.5rem; */
+	padding-top: 10px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+.ditoko__iconWhatsappProduct {
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: -2px;
+}
+.ditoko__fontCommisionProduct {
+	font-size: 12px;
+}
+.ditoko__btnBuyProductPage {
+	font-size: 20px;
+	font-family: 'Airbnb Cereal App Bold';
+}
+.ditoko__commisionInProductPage {
+	font-size: 15px;
+	font-family: 'Airbnb Cereal App Medium';
+}
