@@ -9,7 +9,7 @@ import { Product as ProductContext, Purchase as PurchaseContext, User as UserCon
 import { Button } from '.../../../components/button/button';
 import { H4, P, H1 } from '../../../components/typography/typography';
 import { FlexColumnItemsContentCenter } from '../../../components/flex/flex';
-import TabelStock from '../../../components/products/tabelStock/tabelStock';
+import TabelStock from '../../../components/products/tabelStock/TabelStock';
 import SliderProductImages from '../../../components/products/slider/slider';
 import { LazyProduct, LazyContent } from '../../../components/lazyLoad/index';
 import TitleProduct from '../../../components/products/title/title';
