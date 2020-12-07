@@ -9,14 +9,14 @@ import { Product as ProductContext, Purchase as PurchaseContext, User as UserCon
 import { Button } from '.../../../components/button/button';
 import { H4, P, H1 } from '../../../components/typography/typography';
 import { FlexColumnItemsContentCenter } from '../../../components/flex/flex';
-import TabelStock from '../../../components/products/tabelStock/TabelStock';
+import TabelStock from '../../../components/products/tabelStock/tabelStock';
 import SliderProductImages from '../../../components/products/slider/slider';
 import { LazyProduct, LazyContent } from '../../../components/lazyLoad/index';
 import TitleProduct from '../../../components/products/title/title';
 import { Overlay } from '../../../components/overlay/overlay';
 import { Navigation } from '../../../components/navigation/navigation';
 import { BottomSheet } from '../../../components/products/bottomSheet/bottomSheet';
-import { Seo } from '../../../components/products/seo/Seo';
+import { Seo } from '../../../components/products/seo/seo';
 import { Ongkir } from '../../../components/products/ongkir/ongkir';
 import { BottomSheetOngkir } from '../../../components/products/ongkir/bottomSheetOngkir';
 import ModalSwitchLocation from '../../../components/products/modalLocation/modalSwitchLocation';
