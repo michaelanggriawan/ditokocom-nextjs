@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 export function Seo({ params }) {
 	const { data } = useContext(ProductContext);
 	// console.log(data);
+	// trigerr...
 	return (
 		<Helmet>
 			<title>{`${data.product.name} - ${params.subCategory} | Jual Beli Online - ditoko.com`}</title>
