@@ -11,7 +11,7 @@ import { H4, P, H1 } from '../../../components/typography/typography';
 import { FlexColumnItemsContentCenter } from '../../../components/flex/flex';
 import TabelStock from '../../../components/products/tabelStock/tabelStock';
 import SliderProductImages from '../../../components/products/slider/slider';
-import { LazyProduct, LazyContent } from '../../../components/lazyload/index';
+import { LazyProduct, LazyContent } from '../../../components/lazyLoad/index';
 import TitleProduct from '../../../components/products/title/title';
 import { Overlay } from '../../../components/overlay/overlay';
 import { Navigation } from '../../../components/navigation/navigation';
