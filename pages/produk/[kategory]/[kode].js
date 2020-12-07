@@ -26,13 +26,13 @@ import { Section } from '../../../components/section/section';
 // import fbpixel from '../../../utils/fbpixel';
 import gtm from '../../../utils/gtm';
 import { addCommas } from '../../../helpers/index';
-import CardProduct from '../../../components/Card/Card';
+import CardProduct from '../../../components/card/card';
 
 export default function Product() {
 	const { data, dispatch } = useContext(ProductContext);
 	const context = useContext(PurchaseContext);
 	// const { user } = useContext(UserContext);
-	const user = 'andy'
+	const user = 'andy';
 	const router = useRouter();
 	const params = router.query;
 	const containerElm = useRef(null);
@@ -117,7 +117,7 @@ export default function Product() {
 
 		let vars = [],
 			hash;
-		
+
 		let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 
 		for (var i = 0; i < hashes.length; i++) {
@@ -146,7 +146,7 @@ export default function Product() {
 				},
 			};
 
-			Axios.get(`https://api.ditoko.com/api/v1/${params.kode}${getAfflink ? `?r=${getAfflink}` : ''}`, axiosConfig)
+			Axios.get(`https://api.ditoko.com/api/v1/${params.kategory}/${params.kode}/${getAfflink ? `?r=${getAfflink}` : ''}`, axiosConfig)
 				.then((res) => {
 					// console.log(`product `, res);
 					if (res.status === 200) {
@@ -471,7 +471,6 @@ export default function Product() {
 				if (err) {
 					if (err.response) {
 						if (err.response.status === 429) {
-							console.log(err.response.status);
 							alert('Jangan terlalu cepat ya, tunggu 1 menit untuk kembali normal.');
 						}
 					}
@@ -481,7 +480,7 @@ export default function Product() {
 
 	useEffect(() => {
 		if (data) {
-			let url = `${process.env.REACT_APP_API_ENDPOINT}products?brand_id=${data.product.brand_types[0].brand_id}&product_id=${data.product.id}&limit=6`;
+			let url = `https://api.ditoko.com/api/v1/products?brand_id=${data.product.brand_types[0].brand_id}&product_id=${data.product.id}&limit=6`;
 
 			getCrossSellSlider(url);
 		}
@@ -491,7 +490,7 @@ export default function Product() {
 		if (isCrossSellSlider.next_url !== null && isInfiniteLoad) {
 			const target = event.target;
 			const next_page_url = isCrossSellSlider.next_url;
-
+			console.log('url',next_page_url);
 			if (target.scrollHeight - target.scrollTop === target.clientHeight) {
 				getCrossSellSlider(next_page_url, false);
 				setInfiniteLoad(false);
@@ -697,18 +696,20 @@ export default function Product() {
 																}
 
 																return (
-																	<Link key={i} to={`/${items.brand_types[0].brand.slug}/${items.slug}`}>
-																		<div className='ditoko__m5'>
-																			<CardProduct
-																				grid
-																				bigCard
-																				desc={items.short_description}
-																				name={items.name}
-																				price={addCommas(dailyDealPrice)}
-																				dailyDealPrice={0}
-																				imageUrl={process.env.REACT_APP_STATIC_FILES_URL + items.images[0].image_url}
-																			/>
-																		</div>
+																	<Link key={i} href={`produk/${items.brand_types[0].brand.slug}/${items.slug}`}>
+																		<a>
+																			<div className='ditoko__m5'>
+																				<CardProduct
+																					grid
+																					bigCard
+																					desc={items.short_description}
+																					name={items.name}
+																					price={addCommas(dailyDealPrice)}
+																					dailyDealPrice={0}
+																					imageUrl={'https://ditoko.oss-ap-southeast-5.aliyuncs.com/' + items.images[0].image_url}
+																				/>
+																			</div>
+																		</a>
 																	</Link>
 																);
 															})}

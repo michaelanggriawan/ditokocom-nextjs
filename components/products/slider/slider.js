@@ -28,14 +28,14 @@ export default function SliderProductImages({ dataImg }) {
 									muted={true}
 									className={`ditoko__widthFullPercent ditoko__fadeIn  skeleton`}
 									playing={isPlay}
-									url={process.env.REACT_APP_STATIC_FILES_URL + dataImg.product.videos[0].video_url}
+									url={'https://ditoko.oss-ap-southeast-5.aliyuncs.com/' + dataImg.product.videos[0].video_url}
 								/>
 							</div>
 						) : (
 							<>
 								<img
 									loading='lazy'
-									src={process.env.REACT_APP_STATIC_FILES_URL + dataImg.product.images[0].image_url}
+									src={'https://ditoko.oss-ap-southeast-5.aliyuncs.com/' + dataImg.product.images[0].image_url}
 									alt='ditoko images'
 									className='ditoko__widthFullPercent ditoko__fadeIn'
 								/>
@@ -44,7 +44,7 @@ export default function SliderProductImages({ dataImg }) {
 										onClick={() => setPlay(!isPlay)}
 										className={`ditoko__playVideoBtn ${!isPlay ? 'ditoko__block' : 'ditoko__hidden'}`}
 									>
-										<Img src='images/playVideo.png' cache loading='lazy' />
+										<Img src='/images/playVideo.png' cache loading='lazy' />
 									</div>
 								</div>
 							</>
@@ -57,7 +57,7 @@ export default function SliderProductImages({ dataImg }) {
 						<span key={index}>
 							<img
 								loading='lazy'
-								src={process.env.REACT_APP_STATIC_FILES_URL + imgSlider.image_url}
+								src={'https://ditoko.oss-ap-southeast-5.aliyuncs.com/' + imgSlider.image_url}
 								alt={imgSlider.tag}
 								className='ditoko__widthFullPercent ditoko__fadeIn'
 							/>

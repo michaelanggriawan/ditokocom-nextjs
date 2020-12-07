@@ -20,11 +20,9 @@ export function Provider({ children }) {
 					if (err) {
 						if (err.response) {
 							if (err.response.status === 429) {
-								console.log(err.response.status);
 								alert('Jangan terlalu cepat pindah halaman');
 							}
 							if (err.response.status === 403) {
-								console.log(err.response.status);
 								let resfresh = localStorage.getItem('refreshToken');
 
 								// localStorage.removeItem('refreshToken');
@@ -39,7 +37,6 @@ export function Provider({ children }) {
 								Axios.post(urlToken, form, axiosOrderConfig)
 									.then((res) => {
 										if (res.status === 200) {
-											console.log(res);
 											localStorage.setItem('token', res.data.result.access_token);
 											localStorage.setItem('refreshToken', res.data.result.refresh_token);
 											window.location.reload();
@@ -47,7 +44,6 @@ export function Provider({ children }) {
 									})
 									.catch((err) => {
 										if (err) {
-											console.log('refresh token error');
 											localStorage.removeItem('token');
 											window.location.reload();
 										}
